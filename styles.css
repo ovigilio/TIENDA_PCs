@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #f0f4fd, #e0e6f8);
+    background: linear-gradient(to right, #eac2f8, #739eda);
     color: #333;
 }
 
@@ -30,17 +30,20 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+
 }
 
 nav ul li {
     position: relative; /* Necesario para los submenús */
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #405db5;
-    padding: 10px 20px;
+    text-decoration: aqua;
+    color: #2251df;
+    font-style: italic;
+    font: bold;
+    padding: 20px 50px;
     display: block;
     font-weight: bold;
 }
@@ -88,23 +91,31 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 60px;
+    float: right;
 }
 
 .hero-content h2 {
     font-size: 3rem;
-    color: #405db5;
+    color: #204ed7;
+    float: right;
 }
 
 .hero-content p {
     margin-top: 10px;
     font-size: 1.2rem;
     color: #666;
+    float: right;
 }
 
 .hero-image img {
-    width: 400px;
+    width: 600px;
     height: auto;
+    position: initial;
+    padding: 20px;
+    float: left;
+    
+
 }
 
 .cta-icons {

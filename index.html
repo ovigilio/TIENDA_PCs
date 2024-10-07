@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechTienda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <h1>TechTienda</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Computadoras</a>
-                    <ul>
-                        <li><a href="#">Gamers</a></li>
-                        <li><a href="#">Laptops</a></li>
-                        <li><a href="#">Personalizadas</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Computadoras</a></li>
+                <li><a href="#">Gamers</a></li>
+                <li><a href="#">Laptops</a></li>
                 <li><a href="#">Servicios</a></li>
+                <li><a href="#">Soporte</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <h1>TechTienda</h1>
     </header>
 
     <main>
-        <img src="pc.png" alt="Computadora">
-        <h2>Computadoras de Calidad</h2>
-        <p>Bienvenido a la única tienda online donde encontrarás tu computadora ideal.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Computadoras de calidad</h2>
+                <p>Bienvenido a la única tienda online, donde encontrarás tu computadora ideal</p>
+            </div>
+            <div class="hero-image">
+                <img src="computer-image.png" alt="Computadora">
+            </div>
+        </section>
+        <div class="cta-icons">
+            <img src="whatsapp-icon.png" alt="WhatsApp">
+            <img src="robot-icon.png" alt="Soporte Chatbot">
+        </div>
     </main>
 
     <footer>
-        <ul>
-            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fas fa-comment-dots"></i></a></li>
-        </ul>
+        <p>&copy; 2024 TechTienda. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-

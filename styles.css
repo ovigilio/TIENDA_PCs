@@ -24,20 +24,65 @@ header {
     color: #405db5;
 }
 
+/* Estilos básicos del menú */
 nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    list-style: none;
 }
 
 nav ul li {
+    position: relative; /* Necesario para los submenús */
     margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #405db5;
+    padding: 10px 20px;
+    display: block;
     font-weight: bold;
 }
+
+/* Estilos para el submenú */
+nav ul li ul.submenu {
+    display: none; /* Ocultamos el submenú por defecto */
+    position: absolute; /* Para posicionarlo sobre el menú principal */
+    top: 100%; /* Muestra el submenú justo debajo del menú principal */
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li ul.submenu li {
+    width: 200px; /* Ancho del submenú */
+}
+
+nav ul li ul.submenu li a {
+    padding: 10px;
+    background-color: #fff;
+    color: #405db5;
+}
+
+/* Efecto hover para mostrar el submenú */
+nav ul li:hover ul.submenu {
+    display: block; /* Mostramos el submenú cuando el mouse está sobre el elemento principal */
+}
+
+/* Efecto hover para los elementos del submenú */
+nav ul li ul.submenu li a:hover {
+    background-color: #f0f4fd;
+    color: #333;
+}
+
+/* Estilo para el menú en general */
+nav ul li a:hover {
+    background-color: #f0f4fd;
+    color: #333;
+}
+
 
 .hero {
     display: flex;

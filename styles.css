@@ -53,7 +53,7 @@ header nav {
 
 #showcase {
     min-height: 400px;
-    background: url('D:\SISE\GIT HUB\TIENDA_PCs\imagenes\pc.png') no-repeat 0 -400px;
+    background: url('\imagenes\pc.png') no-repeat 0 -400px;
     text-align: center;
     color: #fff;
 }
